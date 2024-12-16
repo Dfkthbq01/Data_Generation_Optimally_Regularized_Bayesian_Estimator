@@ -31,7 +31,7 @@ for j1=1:length(ICC_x)
                 for j5=1:length(beta_w)
 
                     % Seed and generate data. Use k as seed.
-                    rng(k, 'twister');
+                    rng(c, 'twister');
 
                     for i=1:rep
                         Data(i).data = ALCD_CV(j1, j2, j3, j4, j5); % function 
